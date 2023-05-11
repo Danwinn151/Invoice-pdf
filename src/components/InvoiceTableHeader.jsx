@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
         borderBottomColor: '#3778C2',
-        backgroundColor: '#3778C2',
+        backgroundColor: '#143C77',
         color: '#fff',
         borderBottomWidth: 1,
         alignItems: 'center',
@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontStyle: 'bold',
         flexGrow: 1,
+        paddingTop: 5
     },
     description: {
         width: '60%',
