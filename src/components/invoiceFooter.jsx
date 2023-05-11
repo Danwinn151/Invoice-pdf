@@ -53,7 +53,7 @@ const invoiceFooter = ({invoice}) => {
      </Text>
        </View>
         
-        <Text>
+        <Text style={styles.total}>
          #4000
         </Text>
       </View>
