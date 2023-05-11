@@ -5,8 +5,6 @@ const borderColor = '#3778C2'
 const styles = StyleSheet.create({
     row: {
         flexDirection: 'row',
-        borderBottomColor: '#3778C2',
-        borderBottomWidth: 1,
         alignItems: 'center',
         height: 24,
         fontSize: 12,
@@ -15,8 +13,6 @@ const styles = StyleSheet.create({
     description: {
         width: '85%',
         textAlign: 'right',
-        borderRightColor: borderColor,
-        borderRightWidth: 1,
         paddingRight: 8,
     },
     total: {

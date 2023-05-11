@@ -1,9 +1,9 @@
 import React from "react";
 import { Page, Document, StyleSheet, Image } from "@react-pdf/renderer";
 import InvoiceNo from "../InvoiceNo";
-import BillTo from "../billto"
+import BillTo from "../Billto"
 import InvoiceItemsTable from "../InvoiceItemsTable";
-
+import InvoiceFooter from "../invoiceFooter";
 const styles = StyleSheet.create({
     page: {
         backgroundColor: '#fff',
@@ -30,6 +30,7 @@ const PdfDocument = ({ invoicedata }) => {
                 <InvoiceNo invoice={invoicedata} />
                 <BillTo invoice={invoicedata} />
                 <InvoiceItemsTable invoice={invoicedata} />
+                <InvoiceFooter invoice={invoicedata}/>
             </Page>
         </Document>
     );

@@ -43,22 +43,29 @@ const styles = StyleSheet.create({
         fontSize: 10,
     },
     Paragraph2:{
-        fontSize: 9
+        fontSize: 10,
+        marginRight: 11
+    },
+    dueDate: {
+        flexDirection: "row",
     }
 });
 
 const BillTo = ({ invoice }) => (
     <View style={styles.invoiceNoContainer}> 
    <View>
-    <Text style={styles.billTo}>Bill To:</Text>
-    <Text>{invoice.fullname}</Text>
+    <Text className="text-center" style={styles.billTo}>Bill To:</Text>
+    <Text className="font-sans font-thin text-3xl text-red-200">{invoice.fullname}</Text>
     <Text>{invoice.address}</Text>
     <Text>{invoice.Area}</Text>
     <Text>{invoice.state}</Text>
   </View>
         <View>
         <Text style={styles.Paragraph} >Invoice Date: {invoice.invoiceDate}</Text>  
-        <Text style={styles.Paragraph2}>Due Date: {invoice.dueDate}</Text>            
+        <View style={styles.dueDate}>
+         <Text style={styles.Paragraph2}>Due Date:</Text>
+         <Text>{invoice.dueDate}</Text>
+        </View>
          </View>    
     </View>
 );
