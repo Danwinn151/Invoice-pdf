@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
 });
 
 const PdfDocument = ({ invoicedata }) => {
+    console.log(invoicedata)
     return (
         <Document>
             <Page size="A4" style={styles.page} >

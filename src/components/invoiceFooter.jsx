@@ -34,10 +34,18 @@ const styles = StyleSheet.create({
   balance:{
     marginTop: 10,
     fontSize: 12,
-   backgroundColor: "#999999",
     justifyContent: "flex-end",
     marginLeft: 30
+  },
+  balancedue:{
+    flexDirection: "row",
+    backgroundColor: "#999999",
+    paddingTop: 2,
+    paddingBottom: 2,
+    paddingLeft: 3,
+    paddingRight: 3
   }
+
 })
 
 
@@ -75,9 +83,9 @@ const invoiceFooter = ({invoice}) => {
 
       <View style={styles.balance}>
       <View style={styles.spaceBetween}>
-       <View style={styles.item2}>
-         
-        <Text style={styles.total}>
+       <View style={styles.balancedue}>
+        <View style={styles.item2}>
+         <Text style={styles.total}>
         Balance Due:
      </Text>
        </View>
@@ -85,6 +93,7 @@ const invoiceFooter = ({invoice}) => {
         <Text style={styles.total}>
          #4000
         </Text>
+       </View>
       </View>
       </View>
 
